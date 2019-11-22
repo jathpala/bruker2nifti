@@ -431,7 +431,7 @@ def write_struct(bruker_struct,
     from_dict_to_txt_sorted(summary_info, jph(pfo_output, fin_scan + '_summary.txt'))
 
     # Get the method name in a single .txt file:
-    if bruker_struct['acquisition_method'] is not '':
+    if bruker_struct['acquisition_method'] != '':
         text_file = open(jph(pfo_output, 'acquisition_method.txt'), "w+")
         text_file.write(bruker_struct['acquisition_method'])
         text_file.close()
