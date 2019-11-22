@@ -9,6 +9,3 @@ pytest = "*"
 [packages]
 nibabel = ">=2.1.0"
 numpy = ">=1.12.1"
-
-[requires]
-python_version = "3.7"
